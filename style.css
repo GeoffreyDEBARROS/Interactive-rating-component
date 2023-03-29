@@ -106,12 +106,14 @@ p {
 }
 
 @media screen and (max-width:385px) {
+    .rating {
+        height: 60vh;
+    }
     .rateButton {
         height: 40px;
         width: 40px;
     }
     #submit {
         height: 40px;
-        margin-top: 12px;
     }
 }
