@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: hsl(216, 12%, 8%);
+}
+.rating {
+    background: hsl(213, 19%, 18%);
+    height: 50vh;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.star {
+    background: hsl(213, 20%, 28%);
+    width: 55px;
+    height: 55px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: white;
+}
+p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    line-height: 1.5;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.rateButton {
+    width: 55px;
+    height: 55px;
+    border-radius: 500px;
+    background: hsl(213, 20%, 28%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+}
+.rateButton:hover {
+    cursor: pointer;
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+.rateButton:focus {
+    background: hsl(217, 12%, 63%);
+    color: white;
+}
+#submit {
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(25, 97%, 53%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+#submit:hover {
+    background: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.thx {
+    height: 45vh;
+    background: hsl(213, 19%, 18%);
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+#selectedRate {
+    color: hsl(25, 97%, 53%);
+    background: hsl(213, 20%, 28%);
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 50px;
+}
+.thx p {
+    text-align: center;
+}
+
+@media screen and (max-width:385px) {
+    .rateButton {
+        height: 40px;
+        width: 40px;
+    }
+    #submit {
+        height: 40px;
+    }
+}
